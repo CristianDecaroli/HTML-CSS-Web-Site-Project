@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Lato:wght@300&display=swap");
+.rotate:hover {
+  transform: rotateZ(-360deg);
+  transition: 2s; }
+
+.scale:hover {
+  transform: scale(1.1); }
+
+@media (max-width: 992px) {
+  .scale:hover {
+    transform: none; } }
+
+@keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+html {
+  animation-name: opacity;
+  animation-duration: 1s; }
+
+html {
+  font-size: 62.5%;
+  color: #242323; }
+
+#botonera {
+  background-color: #f5b2bb;
+  padding-right: 3rem;
+  font-size: 2.5rem;
+  font-weight: 400; }
+  #botonera li {
+    color: #242323;
+    font-size: 3rem; }
+  #botonera:hover {
+    font-weight: 500; }
+
+header {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #fae4e6 0%, #b8f5f6 100%); }
+  header img {
+    height: 90%;
+    width: auto; }
+
+main {
+  background-color: #eafcfec0; }
+  main h1 {
+    font-size: 5rem;
+    font-weight: 500; }
+  main .h1-titulo {
+    background-color: #fae4e6;
+    font-size: 3rem;
+    line-height: 3rem; }
+  main h2 {
+    background-color: #fae4e6;
+    font-size: 2.5rem;
+    line-height: 3rem; }
+  main p {
+    font-size: 3rem;
+    line-height: 5rem; }
+  main .p-staff {
+    font-size: 2rem;
+    line-height: 3rem; }
+  main #section-background {
+    background-color: #fff7f8; }
+    main #section-background img {
+      height: 30rem;
+      width: 30rem; }
+
+footer {
+  background-color: #f5b2bb;
+  font-size: 1.5rem; }
+  footer img {
+    height: 4rem;
+    height: 4rem; }

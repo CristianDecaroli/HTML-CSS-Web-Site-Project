@@ -1,0 +1,26 @@
+// ANIMACIONES Y TRANSFORMACIONES
+
+.rotate:hover {
+    transform: rotateZ(-360deg);
+    transition: 2s;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .scale:hover {
+        transform: none;
+    }
+}
+
+@keyframes opacity {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+html {
+    animation-name: opacity;
+    animation-duration: 1s;
+}

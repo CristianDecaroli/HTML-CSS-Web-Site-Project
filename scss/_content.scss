@@ -1,0 +1,76 @@
+html {
+    font-size: $htmlSize;
+    color: $black;
+}
+
+#botonera {
+    background-color: $navFooterColor;
+    padding-right: $textMm;
+    font-size: $textSm;
+    font-weight: 400;
+        li {
+            color: $black;
+            font-size: $textMm;
+        }
+                &:hover {
+                    font-weight: 500;
+                }
+}
+
+header {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $headerColor;
+        img {
+            height: 90%;
+            width: auto;
+        }
+}
+
+main {
+    background-color: $bodyColor;
+        h1 {
+            font-size: $textLm;
+            font-weight: 500;
+        }
+        .h1-titulo {
+            background-color: $backgroundTittleColor;
+            font-size: $textMm;
+            line-height: $textMm;
+        }
+        h2 {
+            background-color: $backgroundTittleColor;
+            font-size: $textSm;
+            line-height: $textMm;
+        }
+        p {
+            font-size: $textMm;
+            line-height: $textLm;
+        }
+        .p-staff {
+            font-size: $textStaff;
+            line-height: $textMm;
+        }
+        #section-background {
+            background-color: $sectionBackground;
+                img {
+                    height: 30rem;
+                    width: 30rem;
+                }
+        }
+
+}
+
+footer {
+    background-color: $navFooterColor;
+    font-size: $textFooter;
+        img {
+            height: 4rem;
+            height: 4rem;
+        }
+}
+
+
