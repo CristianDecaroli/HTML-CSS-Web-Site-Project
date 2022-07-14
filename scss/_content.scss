@@ -1,15 +1,15 @@
 html {
     font-size: $htmlSize;
-    color: $black;
+    color: map-get($map: $colores, $key: 'textGeneral');
 }
 
 #botonera {
-    background-color: $navFooterColor;
+    background-color: map-get($map: $colores, $key: 'navFooterColor');
     padding-right: $textMm;
     font-size: $textSm;
     font-weight: 400;
         li {
-            color: $black;
+            color: map-get($map: $colores, $key: 'textGeneral');
             font-size: $textMm;
         }
                 &:hover {
@@ -17,13 +17,23 @@ html {
                 }
 }
 
+// MIXIN 
+@mixin flex-center($j-center, $a-center){
+    display: flex;
+    justify-content: $j-center;
+    align-items: $a-center;
+}
+
+@mixin img-ico($height, $width){
+    height: 4rem;
+    width: auto;
+}
+
 header {
     height: 30vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $headerColor;
+    @include flex-center(center, center);
+    background: map-get($map: $colores, $key: 'gradient');
         img {
             height: 90%;
             width: auto;
@@ -31,22 +41,25 @@ header {
 }
 
 main {
-    background-color: $bodyColor;
+    background-color: map-get($map: $colores, $key: 'bodyColor');
         h1 {
             font-size: $textLm;
             font-weight: 500;
         }
-        .h1-titulo {
-            background-color: $backgroundTittleColor;
+        .h1-titulo, h2 {
+            background-color: map-get($map: $colores, $key: 'backgroundTittleColor');
             font-size: $textMm;
             line-height: $textMm;
         }
-        h2 {
-            background-color: $backgroundTittleColor;
-            font-size: $textSm;
-            line-height: $textMm;
+        .div-h3 {
+            padding: 1rem;
+                h3 {
+                    @extend .h1-titulo;
+                    border-radius: 5%;
+                    border: solid 1px;
+                }
         }
-        p {
+        .p-principal {
             font-size: $textMm;
             line-height: $textLm;
         }
@@ -55,21 +68,38 @@ main {
             line-height: $textMm;
         }
         #section-background {
-            background-color: $sectionBackground;
+            background-color: map-get($map: $colores, $key: 'sectionBackground');
                 img {
                     height: 30rem;
                     width: 30rem;
                 }
         }
-
+        table {
+            @include flex-center(center, center);
+        }
+        .ico-general {
+            @include img-ico(4rem, auto);
+        }
+        iframe {
+            width: 100%;
+            height: 50vh;
+        }
+        input {
+            width: 100%;
+            height: 4vh;
+        }
+        textarea {
+            width: 100%;
+            height: 10vh
+        }
 }
 
 footer {
-    background-color: $navFooterColor;
+    background-color: map-get($map: $colores, $key: 'navFooterColor');
     font-size: $textFooter;
         img {
             height: 4rem;
-            height: 4rem;
+            width: auto;
         }
 }
 

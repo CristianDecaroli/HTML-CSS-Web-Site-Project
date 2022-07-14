@@ -1,8 +1,13 @@
-// vars
-$bodyColor: #eafcfec0;
-$backgroundTittleColor: #fae4e6;
-$navFooterColor: rgb(245, 178, 187);
-$sectionBackground: #fff7f8;
-$headerColor: linear-gradient(90deg, rgba(250,228,230,1) 0%, rgba(184,245,246,1) 100%);
-$black: rgb(36, 35, 35);
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Lato:wght@300&display=swap');
+
+// VARS FONTS
+$mainFont: 'Arima Madurai', cursive;
+
+// SIZES
+$htmlSize: 62.5%;
+$textFooter: 1.5rem;
+$textStaff: 2rem;
+$textSm: 2.5rem;
+$textMm: 3rem;
+$textLm: 5rem;
 
