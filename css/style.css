@@ -33,7 +33,7 @@ html {
     color: #242323;
     font-size: 3rem; }
   #botonera:hover {
-    font-weight: 500; }
+    font-style: italic; }
 
 header {
   height: 30vh;
@@ -80,13 +80,25 @@ main {
     width: auto; }
   main iframe {
     width: 100%;
-    height: 50vh; }
+    height: 61vh;
+    padding-left: 5%;
+    padding-right: 5%; }
+  main form {
+    padding-left: 5%;
+    padding-right: 5%; }
   main input {
     width: 100%;
     height: 4vh; }
+    main input[type="submit"] {
+      background-color: #f5b2bb;
+      color: 'textGeneral';
+      border: none; }
+      main input[type="submit"]:hover {
+        background-color: #fff7f8;
+        cursor: pointer; }
   main textarea {
     width: 100%;
-    height: 10vh; }
+    height: 20vh; }
 
 footer {
   background-color: #f5b2bb;

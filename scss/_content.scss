@@ -13,7 +13,7 @@ html {
             font-size: $textMm;
         }
                 &:hover {
-                    font-weight: 500;
+                    font-style: italic;
                 }
 }
 
@@ -82,17 +82,34 @@ main {
         }
         iframe {
             width: 100%;
-            height: 50vh;
+            height: 61vh;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        form {
+            padding-left: 5%;
+            padding-right: 5%;
         }
         input {
             width: 100%;
             height: 4vh;
+                &[type="submit"] {
+                        background-color: rgb(245, 178, 187);
+                        color: 'textGeneral';
+                        border: none;
+                            &:hover {
+                                background-color: #fff7f8;
+                                cursor: pointer;
+                            }
+                    }
         }
         textarea {
             width: 100%;
-            height: 10vh
+            height: 20vh;
         }
+        
 }
+
 
 footer {
     background-color: map-get($map: $colores, $key: 'navFooterColor');
