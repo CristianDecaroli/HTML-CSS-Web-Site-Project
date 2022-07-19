@@ -94,11 +94,11 @@ main {
             width: 100%;
             height: 4vh;
                 &[type="submit"] {
-                        background-color: rgb(245, 178, 187);
+                        background-color: map-get($map: $colores, $key: 'navFooterColor');
                         color: 'textGeneral';
                         border: none;
                             &:hover {
-                                background-color: #fff7f8;
+                                background-color: map-get($map: $colores, $key: 'sectionBackground');
                                 cursor: pointer;
                             }
                     }
