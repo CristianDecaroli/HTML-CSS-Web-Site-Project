@@ -1,20 +1,13 @@
 html {
     font-size: $htmlSize;
-    color: map-get($map: $colores, $key: 'textGeneral');
 }
 
 #botonera {
     background-color: map-get($map: $colores, $key: 'navFooterColor');
     padding-right: $textMm;
-    font-size: $textSm;
-    font-weight: 400;
         li {
-            color: map-get($map: $colores, $key: 'textGeneral');
             font-size: $textMm;
         }
-                &:hover {
-                    font-style: italic;
-                }
 }
 
 // MIXIN 
@@ -23,10 +16,9 @@ html {
     justify-content: $j-center;
     align-items: $a-center;
 }
-
-@mixin img-ico($height, $width){
-    height: 4rem;
-    width: auto;
+@mixin text($Staff, $Mm){
+    font-size: $Staff;
+    line-height: $Mm;
 }
 
 header {
@@ -41,31 +33,29 @@ header {
 }
 
 main {
+    color: map-get($map: $colores, $key: 'textGeneral');
     background-color: map-get($map: $colores, $key: 'bodyColor');
         h1 {
+            color: map-get($map: $colores, $key: 'navFooterColor');
             font-size: $textLm;
-            font-weight: 500;
+            text-shadow: 4px 4px 4px map-get($map: $colores, $key: 'shadow')
         }
         .h1-titulo, h2 {
             background-color: map-get($map: $colores, $key: 'backgroundTittleColor');
             font-size: $textMm;
             line-height: $textMm;
         }
-        .div-h3 {
-            padding: 1rem;
-                h3 {
-                    @extend .h1-titulo;
-                    border-radius: 5%;
-                    border: solid 1px;
-                }
+        h3 {
+            @extend .h1-titulo;
         }
         .p-principal {
             font-size: $textMm;
             line-height: $textLm;
+            text-shadow: 4px 4px 4px map-get($map: $colores, $key: 'shadow')
         }
         .p-staff {
-            font-size: $textStaff;
-            line-height: $textMm;
+            @include text($textStaff, $textMm);
+            background-color: map-get($map: $colores, $key: 'sectionBackground');
         }
         #section-background {
             background-color: map-get($map: $colores, $key: 'sectionBackground');
@@ -76,9 +66,7 @@ main {
         }
         table {
             @include flex-center(center, center);
-        }
-        .ico-general {
-            @include img-ico(4rem, auto);
+            @include text($textStaff, $textMm);
         }
         iframe {
             width: 100%;
@@ -107,16 +95,22 @@ main {
             width: 100%;
             height: 20vh;
         }
-        
 }
 
 footer {
+    color: map-get($map: $colores, $key: 'textGeneral');
     background-color: map-get($map: $colores, $key: 'navFooterColor');
     font-size: $textFooter;
         img {
             height: 4rem;
             width: auto;
         }
+        #ulFooter {
+            list-style: none;
+            padding-left: 4px;
+                a {
+                    text-decoration: none;
+                    color: map-get($map: $colores, $key: 'textGeneral');
+                }
+        }
 }
-
-

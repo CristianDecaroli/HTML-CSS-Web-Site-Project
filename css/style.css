@@ -21,19 +21,13 @@ html {
   animation-duration: 1s; }
 
 html {
-  font-size: 62.5%;
-  color: #242323; }
+  font-size: 62.5%; }
 
 #botonera {
   background-color: #f5b2bb;
-  padding-right: 3rem;
-  font-size: 2.5rem;
-  font-weight: 400; }
+  padding-right: 3rem; }
   #botonera li {
-    color: #242323;
     font-size: 3rem; }
-  #botonera:hover {
-    font-style: italic; }
 
 header {
   height: 30vh;
@@ -41,31 +35,30 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #fae4e6 0%, #b8f5f6 100%); }
+  background: linear-gradient(to right, #dae2f8, #e7c5c5); }
   header img {
     height: 90%;
     width: auto; }
 
 main {
-  background-color: #eafcfec0; }
+  color: #313131;
+  background-color: #fcffff; }
   main h1 {
+    color: #f5b2bb;
     font-size: 5rem;
-    font-weight: 500; }
-  main .h1-titulo, main .div-h3 h3, main h2 {
+    text-shadow: 4px 4px 4px #abbaab54; }
+  main .h1-titulo, main h3, main h2 {
     background-color: #fae4e6;
     font-size: 3rem;
     line-height: 3rem; }
-  main .div-h3 {
-    padding: 1rem; }
-    main .div-h3 h3 {
-      border-radius: 5%;
-      border: solid 1px; }
   main .p-principal {
     font-size: 3rem;
-    line-height: 5rem; }
+    line-height: 5rem;
+    text-shadow: 4px 4px 4px #abbaab54; }
   main .p-staff {
     font-size: 2rem;
-    line-height: 3rem; }
+    line-height: 3rem;
+    background-color: #fff7f8; }
   main #section-background {
     background-color: #fff7f8; }
     main #section-background img {
@@ -74,10 +67,9 @@ main {
   main table {
     display: flex;
     justify-content: center;
-    align-items: center; }
-  main .ico-general {
-    height: 4rem;
-    width: auto; }
+    align-items: center;
+    font-size: 2rem;
+    line-height: 3rem; }
   main iframe {
     width: 100%;
     height: 61vh;
@@ -101,8 +93,15 @@ main {
     height: 20vh; }
 
 footer {
+  color: #313131;
   background-color: #f5b2bb;
   font-size: 1.5rem; }
   footer img {
     height: 4rem;
     width: auto; }
+  footer #ulFooter {
+    list-style: none;
+    padding-left: 4px; }
+    footer #ulFooter a {
+      text-decoration: none;
+      color: #313131; }
