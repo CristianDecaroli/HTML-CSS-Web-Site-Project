@@ -70,6 +70,8 @@ main {
     align-items: center;
     font-size: 2rem;
     line-height: 3rem; }
+    main table .tableColor {
+      background-color: #fff7f8; }
   main iframe {
     width: 100%;
     height: 61vh;
@@ -78,6 +80,9 @@ main {
   main form {
     padding-left: 5%;
     padding-right: 5%; }
+    main form textarea {
+      width: 100%;
+      height: 20vh; }
   main input {
     width: 100%;
     height: 4vh; }
@@ -88,9 +93,6 @@ main {
       main input[type="submit"]:hover {
         background-color: #fff7f8;
         cursor: pointer; }
-  main textarea {
-    width: 100%;
-    height: 20vh; }
 
 footer {
   color: #313131;

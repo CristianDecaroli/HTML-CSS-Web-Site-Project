@@ -67,7 +67,11 @@ main {
         table {
             @include flex-center(center, center);
             @include text($textStaff, $textMm);
+                .tableColor {
+                    background-color: map-get($map: $colores, $key: 'sectionBackground');
+                }
         }
+
         iframe {
             width: 100%;
             height: 61vh;
@@ -77,6 +81,10 @@ main {
         form {
             padding-left: 5%;
             padding-right: 5%;
+                textarea {
+                    width: 100%;
+                    height: 20vh;
+                }
         }
         input {
             width: 100%;
@@ -90,10 +98,6 @@ main {
                                 cursor: pointer;
                             }
                     }
-        }
-        textarea {
-            width: 100%;
-            height: 20vh;
         }
 }
 
